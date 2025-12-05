@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Master Roadmap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Optional Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo"></div>
+        <div class="brand-text">
+          <div class="brand-title">AI Master Roadmap</div>
+          <div class="brand-subtitle">From zero to production AI – visual progress path</div>
+        </div>
+      </div>
+      <div class="progress-chip">
+        <span class="progress-chip-dot"></span>
+        <span id="overallProgressText">Loading...</span>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="left-panel">
+        <div class="stage-switcher" id="stageSwitcher">
+          <!-- Stage buttons injected by JS -->
+        </div>
+
+        <section class="stage-panel">
+          <div class="stage-header">
+            <div>
+              <div class="stage-title" id="stageTitle">Loading stage...</div>
+              <div class="stage-meta">
+                <span class="stage-chip" id="stageSummary">—</span>
+                <span class="stage-chip badge-small" id="stageCountLabel">0 topics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap-wrapper">
+            <svg class="roadmap-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <!-- Path drawn via CSS class -->
+              <path
+                class="road-path"
+                d="M 5 75
+                   Q 20 35 35 55
+                   T 65 45
+                   T 95 65"
+              />
+            </svg>
+            <div class="nodes-layer" id="nodesLayer">
+              <!-- Nodes inserted by JS -->
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="details-panel" id="detailsPanel">
+        <div>
+          <div class="details-title" id="detailsTitle">
+            Select a topic
+          </div>
+          <div class="details-meta">
+            <span class="details-pill" id="detailsStagePill">Stage</span>
+            <span class="details-pill" id="detailsModulePill">Module</span>
+            <span class="details-pill" id="detailsIdPill">Topic ID</span>
+          </div>
+        </div>
+
+        <div class="details-body" id="detailsBody">
+          <p>Click a glowing node on the roadmap to see its details here.</p>
+          <p>Later, you’ll paste your AI-generated chapters (from Google AI Studio) into JSON files and load full theory, examples, and exercises for each topic.</p>
+        </div>
+
+        <div class="details-footer">
+          <button class="btn btn-primary" id="toggleDoneButton" disabled>
+            Mark as done
+          </button>
+          <div class="mini-progress" id="miniProgressText">
+            0 / 0 topics in this stage
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
