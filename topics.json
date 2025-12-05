@@ -1,0 +1,253 @@
+{
+  "stages": [
+    {
+      "id": "stage_1_foundations",
+      "title": "Stage 1 – Foundations",
+      "shortTitle": "Foundations",
+      "summary": "Python, math, and basic ML thinking.",
+      "modules": [
+        {
+          "name": "Python foundations",
+          "topics": [
+            {
+              "id": "py_syntax_basics",
+              "title": "Python syntax fundamentals",
+              "description": "How Python code is structured: indentation, statements, expressions, comments, and running simple scripts. This is the base for all further AI coding."
+            },
+            {
+              "id": "py_data_types",
+              "title": "Data types and variables",
+              "description": "Integers, floats, booleans, strings, and how values are stored and updated in variables. Builds a clear mental model of how data lives in memory."
+            },
+            {
+              "id": "py_collections_core",
+              "title": "Core collections in Python",
+              "description": "Lists, tuples, dictionaries and sets: how to create, update, iterate, and choose the right container for data used in ML workflows."
+            },
+            {
+              "id": "py_control_flow",
+              "title": "Control flow constructs",
+              "description": "if/elif/else, for loops, while loops and common patterns like counting, filtering and early exits. Makes your ML scripts behave logically."
+            },
+            {
+              "id": "py_functions_basics",
+              "title": "Functions and parameters",
+              "description": "Defining reusable functions, using parameters, return values and default arguments. Allows you to structure data processing and model code cleanly."
+            }
+          ]
+        },
+        {
+          "name": "Math for ML",
+          "topics": [
+            {
+              "id": "math_linear_algebra_intro",
+              "title": "Vectors and matrices basics",
+              "description": "Concepts of vectors and matrices, basic operations such as addition and multiplication, and why they matter for machine learning models."
+            },
+            {
+              "id": "math_dot_product_norms",
+              "title": "Dot product and norms",
+              "description": "Geometric meaning of dot product, length of vectors, distances and similarities—core ideas behind many ML algorithms."
+            },
+            {
+              "id": "math_functions_derivatives",
+              "title": "Functions and derivatives",
+              "description": "Intuitive understanding of functions, slopes, and derivatives; the base to later understand gradient descent in model training."
+            },
+            {
+              "id": "math_probability_basics",
+              "title": "Probability fundamentals",
+              "description": "Random variables, basic probability rules and distributions. Builds the intuition for uncertainty and classification confidence."
+            }
+          ]
+        },
+        {
+          "name": "ML mindset",
+          "topics": [
+            {
+              "id": "ml_intro_concepts",
+              "title": "Machine learning overview",
+              "description": "What machine learning is, key terminology, supervised vs unsupervised learning, and where ML fits in real products."
+            },
+            {
+              "id": "ml_data_concepts",
+              "title": "Datasets, features, labels",
+              "description": "How raw information becomes structured data, what features and labels are, and how we prepare datasets for training."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_2_machine_learning",
+      "title": "Stage 2 – Classical Machine Learning",
+      "shortTitle": "ML Core",
+      "summary": "Core ML algorithms, evaluation, and model improvement.",
+      "modules": [
+        {
+          "name": "Regression models",
+          "topics": [
+            {
+              "id": "ml_linear_regression_fundamentals",
+              "title": "Linear regression fundamentals",
+              "description": "Linear regression model, fitting a line to data, interpreting coefficients, and understanding when the assumptions make sense."
+            },
+            {
+              "id": "ml_loss_functions_regression",
+              "title": "Loss functions for regression",
+              "description": "Mean squared error and related metrics, why they are used, and how they measure the quality of regression predictions."
+            },
+            {
+              "id": "ml_gradient_descent_basics",
+              "title": "Gradient descent algorithms",
+              "description": "Core idea of gradient descent, update rules, learning rate, and how this optimisation method is used to train models."
+            }
+          ]
+        },
+        {
+          "name": "Classification models",
+          "topics": [
+            {
+              "id": "ml_logistic_regression_theory",
+              "title": "Logistic regression theory",
+              "description": "Sigmoid function, probabilities, decision boundaries and how logistic regression performs binary classification."
+            },
+            {
+              "id": "ml_classification_algorithms",
+              "title": "Core classification algorithms",
+              "description": "Overview of common classifiers such as k-NN, decision trees and support vector machines, with their strengths and weaknesses."
+            },
+            {
+              "id": "ml_decision_trees",
+              "title": "Decision tree models",
+              "description": "Splitting criteria, tree depth, and how trees model complex decision boundaries from tabular data."
+            },
+            {
+              "id": "ml_ensemble_methods",
+              "title": "Ensemble learning methods",
+              "description": "Random forests and gradient boosting, using many weak models together to achieve stronger predictive performance."
+            }
+          ]
+        },
+        {
+          "name": "Model evaluation and tuning",
+          "topics": [
+            {
+              "id": "ml_train_validation_test",
+              "title": "Train, validation, test splits",
+              "description": "How data is split into training, validation and test sets, and why this protects you from overfitting and unrealistic performance estimates."
+            },
+            {
+              "id": "ml_evaluation_metrics",
+              "title": "Model evaluation metrics",
+              "description": "Accuracy, precision, recall, F1-score, ROC AUC and when to use each metric for balanced or imbalanced classification problems."
+            },
+            {
+              "id": "ml_overfitting_underfitting",
+              "title": "Overfitting and underfitting",
+              "description": "How to recognise underfitting and overfitting from learning curves, and the trade-off between bias and variance."
+            },
+            {
+              "id": "ml_cross_validation",
+              "title": "Cross-validation techniques",
+              "description": "k-fold cross-validation and related methods to obtain stable estimates of model performance on limited data."
+            },
+            {
+              "id": "ml_hyperparameter_tuning",
+              "title": "Hyperparameter tuning methods",
+              "description": "Grid search, random search and intuition for adjusting model hyperparameters to improve performance without overfitting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage_3_deep_learning",
+      "title": "Stage 3 – Deep Learning and Applied AI",
+      "shortTitle": "DL & Applied",
+      "summary": "Neural networks, transformers, NLP, vision, and deployment.",
+      "modules": [
+        {
+          "name": "Neural network foundations",
+          "topics": [
+            {
+              "id": "dl_perceptron_and_neurons",
+              "title": "Perceptrons and artificial neurons",
+              "description": "From the perceptron to modern neurons, weighted sums and activation functions as the basic building blocks of deep networks."
+            },
+            {
+              "id": "dl_network_architectures",
+              "title": "Neural network architectures",
+              "description": "Layers, depth, width, activation choices and how different architectures influence model capacity and behaviour."
+            },
+            {
+              "id": "dl_backpropagation_concept",
+              "title": "Backpropagation concept",
+              "description": "High-level view of how gradients are propagated backwards through a network to update weights during training."
+            },
+            {
+              "id": "dl_regularization_techniques",
+              "title": "Regularization in deep learning",
+              "description": "Dropout, weight decay and early stopping as tools to control overfitting in deep neural networks."
+            }
+          ]
+        },
+        {
+          "name": "Specialised architectures",
+          "topics": [
+            {
+              "id": "dl_convolutional_networks",
+              "title": "Convolutional neural networks",
+              "description": "Convolutions, feature maps and pooling layers for image data, and why CNNs are effective for vision tasks."
+            },
+            {
+              "id": "dl_recurrent_networks",
+              "title": "Recurrent and sequence models",
+              "description": "Idea of processing sequences, limitations of basic RNNs, and how they differ from feed-forward architectures."
+            },
+            {
+              "id": "dl_attention_mechanisms",
+              "title": "Attention mechanisms",
+              "description": "Core idea of attention: focusing on the most relevant parts of input sequences, and why it transformed modern deep learning."
+            },
+            {
+              "id": "dl_transformer_basics",
+              "title": "Transformer architecture basics",
+              "description": "High-level structure of transformer encoders and decoders, self-attention blocks and positional information."
+            }
+          ]
+        },
+        {
+          "name": "Applied AI and deployment",
+          "topics": [
+            {
+              "id": "applied_nlp_foundations",
+              "title": "NLP foundations",
+              "description": "Tokenisation, word representations and the typical pipeline for text classification and related tasks."
+            },
+            {
+              "id": "applied_computer_vision_basics",
+              "title": "Computer vision basics",
+              "description": "From image tensors to classification and detection tasks, how computer vision problems are set up for deep models."
+            },
+            {
+              "id": "applied_model_apis",
+              "title": "Model APIs and web endpoints",
+              "description": "Turning trained models into HTTP endpoints using a lightweight framework, so other applications can call them."
+            },
+            {
+              "id": "applied_deployment_basics",
+              "title": "Deployment and monitoring basics",
+              "description": "Simple deployment patterns, environment configuration and monitoring core metrics so an AI system stays reliable."
+            },
+            {
+              "id": "applied_ethics_safety",
+              "title": "Ethics, bias and safety",
+              "description": "Main ethical concerns in AI, bias and fairness issues, and responsible behaviour when building and shipping AI systems."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
